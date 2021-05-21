@@ -1,0 +1,10 @@
+autopep8
+black
+flake8
+flake8-import-order
+pip-tools
+mock
+pylint
+pytest
+pytest-cov
+tox

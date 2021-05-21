@@ -65,11 +65,13 @@ module.exports = class extends Generator {
     this.copyFile({ key: '.coveragerc', templateArgs });
     this.copyFile({ key: '.flake8' });
     this.copyFile({ key: '.gitignore' });
+    this.copyFile({ key: '.pycodestyle' });
     this.copyFile({ key: '.pylintrc' });
+    this.copyFile({ key: 'dev_requirements.in' });
     this.copyFile({ key: 'LICENSE', templateArgs });
     this.copyFile({ key: 'Makefile', templateArgs });
+    this.copyFile({ key: 'pyproject.toml' });
     this.copyFile({ key: 'README.md' , templateArgs });
-    this.copyFile({ key: 'requirements.txt' });
     this.copyFile({ key: 'setup.py', templateArgs });
     this.copyFile({ key: 'tox.ini', templateArgs });
 
@@ -77,7 +79,6 @@ module.exports = class extends Generator {
     this.copyFile({ key: 'src/app.py', destPath: `${templateArgs.sourceFolder}/app.py` });
 
     this.copyFile({ key: 'tests/__init__.py' })
-    this.copyFile({ key: 'tests/requirements.txt' })
     this.copyFile({ key: 'tests/test_dummy.py', templateArgs })
 
     // this.copyFile({ key: 'src/index.js' });

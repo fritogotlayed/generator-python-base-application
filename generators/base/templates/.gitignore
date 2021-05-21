@@ -1,23 +1,35 @@
+# Compiled files
+*.py[cod]
 __pycache__/
+
+# Distribution / packages
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 *.egg-info
-*.swp
-*.pyc
-*.log
-*.h
-*.c
-.tox
-.idea
-.DS_Store
-.venv
-.cache
+.installed.cfg
+*.egg
+
+# Testing / Coverage
+.tox/
 .coverage
-coverage.xml
-nosetests.xml
-docker-compose.yml
+.coverage.*
+.cache
 
-data/
-logs/
-docs/
-.vscode/
+# IDEs
+# Please add these to your global git ignore file.
 
-*creds.config
+# Other
+.venv/
+dev_requirements.txt
+requirements.txt

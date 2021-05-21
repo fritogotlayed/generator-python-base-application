@@ -1,7 +1,12 @@
+"""Sample application
+"""
+
+
 def main():
-    print('hello')
+    """Sample application entry point"""
+    print("hello")
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
