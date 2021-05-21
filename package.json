@@ -1,0 +1,16 @@
+{
+  "name": "generator-python-base-application",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "generators/app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "snake-case": "^3.0.3",
+    "yeoman-generator": "^4.8.2"
+  }
+}

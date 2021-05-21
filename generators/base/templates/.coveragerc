@@ -1,0 +1,17 @@
+[run]
+branch = True
+source = <%= sourceFolder %>
+
+[report]
+fail_under = 45
+show_missing = True
+include = <%= sourceFolder %>*
+omit = tests*
+exclude_lines =
+    # standard ignore
+    pragma: no cover
+
+    # non-runnable code
+    if 0:
+    if __name__ == .__main__.:
+    @abc.abstractmethod
