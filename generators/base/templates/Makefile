@@ -47,7 +47,8 @@ setup:  ## Creates the initial virtual env
 	. ./.venv/bin/activate; \
 	pip3 install pip-tools; \
 	pip-compile && pip-compile dev_requirements.in; \
-	pip-sync requirements.txt dev_requirements.txt;
+	pip-sync requirements.txt dev_requirements.txt; \
+	if [ -d "./.git" ]; then pre-commit install; fi;
 
 test: requirements  ## Runs the tox suite against each of the target interpreters.
 	. ./.venv/bin/activate; \

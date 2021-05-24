@@ -65,6 +65,7 @@ module.exports = class extends Generator {
     this.copyFile({ key: '.coveragerc', templateArgs });
     this.copyFile({ key: '.flake8' });
     this.copyFile({ key: '.gitignore' });
+    this.copyFile({ key: '.pre-commit-config.yaml' });
     this.copyFile({ key: '.pycodestyle' });
     this.copyFile({ key: '.pylintrc' });
     this.copyFile({ key: 'dev_requirements.in' });
