@@ -22,8 +22,13 @@ clean-pyc:  ## Cleans the environment of pyc, pyo and ~ files.
 	find . -name '*~' -exec rm --force {} +
  
 clean: clean-pyc  ## Cleans the environment to scratch
-	rm -rf ./*.egg-info ./.tox/ ./.venv/ ./*requirements.txt ./nosetest.xml ./.coverage
+	rm -rf ./*.egg-info ./.tox/ ./.venv/ ./*requirements.txt ./nosetest.xml ./.coverage ./build ./dist *.spec
 	find . -type d -name "__pycache__" -exec rm -rf {} +
+
+compile:  ## Compiles the application down to a dist folder
+	rm -rf ./dist
+	. ./.venv/bin/activate; \
+	pyinstaller -F -y --clean ./<%= sourceFolder %>/app.py;
 
 dev-install:  ## Installs the app in a way that modifications to the files are run easily
 	pip3 install -e .

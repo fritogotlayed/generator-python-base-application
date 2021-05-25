@@ -4,6 +4,7 @@ flake8-import-order
 pip-tools
 pre-commit
 mock
+pyinstaller
 pylint
 pytest
 pytest-cov

@@ -19,6 +19,7 @@ var/
 *.egg-info
 .installed.cfg
 *.egg
+*.spec
 
 # Testing / Coverage
 .tox/
